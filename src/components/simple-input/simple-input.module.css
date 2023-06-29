@@ -28,7 +28,7 @@
 
 /* Checked - отмечен*/
 
-.check__input:checked + .check__box {
+.check__box_checked{
   background-image: url(../../images/checkmark.svg);
   background-size: cover;
   background-position: center;

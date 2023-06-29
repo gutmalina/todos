@@ -12,6 +12,7 @@ const SimpleInput: FC<TPropsInput> = ({
 }) => {
   const [value, setValue] = useState(onDo.title);
   const [classInput, setClassInput] = useState(`${styles.input_text}`);
+  const [classCheckbox, setClassCheckbox] = useState(`${styles.check__box}`)
 
   const handleChangeValue = useCallback((e: React.SyntheticEvent) => {
     const target = e.target as HTMLInputElement;
@@ -41,9 +42,13 @@ const SimpleInput: FC<TPropsInput> = ({
   }, [listToDo, setListtoDo, onDo.id]);
 
   useEffect(() => {
-    !onDo.done
-      ? setClassInput(`${styles.input_text}`)
-      : setClassInput(`${styles.input_text} ${styles.input_text_through}`);
+    if(!onDo.done){
+      setClassInput(`${styles.input_text}`)
+      setClassCheckbox(`${styles.check__box}`)
+    }else{
+      setClassInput(`${styles.input_text} ${styles.input_text_through}`);
+      setClassCheckbox(`${styles.check__box} ${styles.check__box_checked}`)
+    }
   }, [onDo.done]);
 
   useEffect(() => {
@@ -67,7 +72,7 @@ const SimpleInput: FC<TPropsInput> = ({
         <label className={styles.check}>
           <input className={styles.check__input} type="checkbox" />
           <span
-            className={styles.check__box}
+            className={classCheckbox}
             onClick={handleChangeCheckBox}
           ></span>
         </label>

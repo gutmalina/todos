@@ -1,7 +1,7 @@
 # Тестовое задание для Frontend intern в Mindbox
 
 <p padding="0" align="center">~~~~~~~~~~</p>
-<a  href="https://gutmalina.github.io/scheduler/" target="_blank" align="center"><img src="./readme/scheduler_video.gif" width="100%" alt="Демо"></a>
+<a  href="https://gutmalina.github.io/todos/" target="_blank" align="center"><img src="./readme/todos.gif" width="100%" alt="Демо"></a>
 <p padding="0" align="center">~~~~~~~~~~</p>
 
 
@@ -9,7 +9,7 @@
 * CSS
 * HTML
 * JavaScript
-* React
+* React, React Hooks
 * TypeScript
 * Cypress
 
@@ -27,4 +27,4 @@
 * Опционально: проект доступен на GitHub Pages/Vercel/etc.
 
 ### Ссылки:
-* :mag_right: [Открыть проект](https://gutmalina.github.io/scheduler/)
+* :mag_right: [Открыть проект](https://gutmalina.github.io/todos/)

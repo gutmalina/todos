@@ -57,7 +57,7 @@ const RenderToDo: FC<TPropsRenderToDo> = ({ date }) => {
   }, [listToDo]);
 
   return (
-    <form className={styles.list}>
+    <form className={styles.list} onSubmit={(e)=> e.preventDefault()}>
       {listToDo.length &&
         listToDo
           .filter((item) => item.date === date)
