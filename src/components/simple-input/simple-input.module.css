@@ -1,0 +1,92 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid rgb(208, 208, 208);
+  width: 100%;
+}
+
+/* Check */
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check__box {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(208, 208, 208);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Checked - отмечен*/
+
+.check__input:checked + .check__box {
+  background-image: url(../../images/checkmark.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Focused - в фокусе, когда выбран табом */
+
+.check__input:focus + .check__box {
+  border: 1px solid rgb(14, 162, 225);
+}
+
+.subtitle {
+  font-size: 1.3em;
+}
+
+.input_text {
+  border: none;
+  outline: none;
+  font-size: 1.3em;
+  width: 100%;
+}
+
+.input_text:focus::placeholder {
+  color: transparent;
+}
+
+.input_text_through {
+  text-decoration: line-through;
+}
+
+.btn {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+.btn:focus {
+  width: 25px;
+  height: 25px;
+  outline: none;
+}
+
+.btn_delete {
+  background-image: url(../../images/delete.svg);
+}
+
+.btn_delete:disabled {
+  background-image: url(../../images/delete_disabled.svg);
+}
+
+.btn_delete_container {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images/delete_container.svg);
+}

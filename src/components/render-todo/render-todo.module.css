@@ -1,0 +1,55 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: none;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.btn:focus {
+  width: 40px;
+  height: 40px;
+  outline: none;
+}
+
+.btn_add {
+  background-image: url(../../images/plus.svg);
+}
+
+.btn_all_todos {
+  background-color: var(--color-blue);
+  width: max-content;
+  border-radius: 7px;
+  padding: 10px 15px;
+  text-align: center;
+  outline: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+  border: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.date {
+  font-size: 1.3em;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 20px 0;
+}
